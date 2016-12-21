@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/*============================
+# 在庫一覧
+============================*/
+#news #main{
+	width:100%;
+	margin:0;
+}
+#news #main .content {
+	width: 1000px;
+	margin: 0 auto;
+}
+#news #main h2.ttl {
+	text-align: center;
+  margin: 0 0 14px;
+}
+#news #main p.sub {
+	color: #000;
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 48px;
+}
+#news #main p.st.sub {
+	margin-bottom: 24px;
+}
+#news #main #section1 {
+	width: 100%;
+	position: relative;
+}
+#news #main #section1 img {
+	width: 100%;
+}
+#news #main #section2 {
+	width: 100%;
+	padding: 66px 0 0;
+	border-bottom: 1px solid #d5d5d5;
+	-moz-box-shadow: 0px 0px 10px #d5d5d5;
+	-webkit-box-shadow: 0px 0px 10px #d5d5d5;
+	box-shadow: 0px 0px 10px #d5d5d5;
+}
+#news #main #section2 .content {
+	position: relative;
+	padding: 0 0 60px;
+}
+#news #main #section2 p {
+	font-size: 14px;
+}
+#news #main #section2 .row {
+  margin: 20px 0;
+	color: #666666;
+}
+#news #main #section2 .row:hover {
+	background-color: #eeeeee;
+}
+#news #main #section2 .arrow {
+  position: relative;
+	padding: 15px 25px 15px 10px;
+}
+#news #main #section2 .arrow:before {
+    position: absolute;
+    display: block;
+    right: 10px;
+    top: 26px;
+    content: "";
+    height: 16px;
+    width: 13px;
+    background-image: url(img/arrow_right.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: visible;
+}
+#news #main #section2 .row .left-item {
+  text-align: right;
+}
+#news #main #section2 .row .right-item {
+  border-left: solid 2px #666666;
+}

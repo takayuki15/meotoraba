@@ -1,21 +1,21 @@
 @charset "utf-8";
 
-#top #main {
+#about #main {
 	width: 100%;
 	margin: 0;
 	padding:0;
 }
-#top #main .content {
+#about #main .content {
 	width: 100%;
 	margin: 0;
 }
-#top #main #section1 .slider1 img.pc_only {
+#about #main #section1 .slider1 img.pc_only {
 	display: none;
 }
-#top #main #section1 .slider1 img.sp_only {
+#about #main #section1 .slider1 img.sp_only {
 	display: block;
 }
-#top #main #section1 #news_sec {
+#about #main #section1 #news_sec {
 	width: 100%;
 	height: 86px;
 	background-color: rgba(255,255,255,0.8);
@@ -24,11 +24,11 @@
 	left: 0;
 	z-index: 500;
 }
-#top #main #section1 #news_sec_inner {
+#about #main #section1 #news_sec_inner {
 	width: 100%;
 	margin: 0;
 }
-#top #main #section1 #news_sec_inner h2 {
+#about #main #section1 #news_sec_inner h2 {
 	float: none;
 	width: 100%;
 	text-align: center;
@@ -37,31 +37,31 @@
 	padding-bottom: 8px;
 	background: url(../../img/top/underline.png) center bottom no-repeat;
 }
-#top #main #section1 #news_sec_inner h2 img {
+#about #main #section1 #news_sec_inner h2 img {
 	width: 42px;
 	height: auto;
 }
-#top #main #section1 #news_sec_inner .news_box {
+#about #main #section1 #news_sec_inner .news_box {
 	float: none;
 	width: 100% !important;
 	height: 46px !important;
 	margin: 0;
 	padding: 0 0 0 4% !important;
 }
-#top #main #section1 #news_sec_inner .news_box .jspContainer {
+#about #main #section1 #news_sec_inner .news_box .jspContainer {
 	width: 100% !important;
 	height: 46px !important;
 }
-#top #main #section1 #news_sec_inner .news_box .jspPane {
+#about #main #section1 #news_sec_inner .news_box .jspPane {
 	width: 100% !important;
 }
-#top #main #section1 #news_sec_inner .news_box ul li {
+#about #main #section1 #news_sec_inner .news_box ul li {
 	display: table;
 	font-size: 10px;
 	padding: 10px 0;
 	border-bottom: 1px dashed #666;
 }
-#top #main #section1 #news_sec_inner .news_box ul li span.day {
+#about #main #section1 #news_sec_inner .news_box ul li span.day {
 	display: table-cell;
 	width: 78px;
 	padding-right: 6px;
@@ -70,7 +70,7 @@
 	font-size: 10px;
 	position: relative;
 }
-#top #main #section1 #news_sec_inner .news_box ul li span.day:after {
+#about #main #section1 #news_sec_inner .news_box ul li span.day:after {
 	content: " ";
 	position: absolute;
 	right: 0;
@@ -79,18 +79,18 @@
 	height: 16px;
 	background-color: #666;
 }
-#top #main #section1 #news_sec_inner .news_box ul li span.text {
+#about #main #section1 #news_sec_inner .news_box ul li span.text {
 	display: table-cell;
 	padding: 0 10px 0 6px;
 }
-#top #main #section2 {
+#about #main #section2 {
 	padding: 40px 0 0;
 }
-#top #main #section2 .content {
+#about #main #section2 .content {
 	width: 100%;
 	padding: 0 14%;
 }
-#top #main #section2 h2 {
+#about #main #section2 h2 {
 	width: 100%;
 	font-size: 20px;
 	text-align: center;
@@ -98,30 +98,30 @@
 	box-sizing: border-box;
 	margin-bottom: 10px;
 }
-#top #main #section2 img {
+#about #main #section2 img {
 	position: static;
 }
-#top #main #section2 p.pdf a {
+#about #main #section2 p.pdf a {
 	width: 130px;
 	padding: 10px 0;
 }
-#top #main #section2 p {
+#about #main #section2 p {
 	font-size: 10px;
 }
-#top #main #section3 {
+#about #main #section3 {
 	padding: 28px 0 22px;
 }
-#top #main #section3 h2 {
+#about #main #section3 h2 {
 	width: 100%;
 }
-#top #main #section3 h2 img {
+#about #main #section3 h2 img {
 	width: 70px;
 }
-#top #main #section3 p.sub {
+#about #main #section3 p.sub {
 	font-size: 11px;
 	margin-bottom: 32px;
 }
-#top #main #section3 p.pdf a {
+#about #main #section3 p.pdf a {
 	font-size: 11px;
 	text-align: center;
 	display: block;
@@ -132,38 +132,38 @@
 	padding: 14px 0;
 	border-radius: 4px;
 }
-#top #main #section3 p.pdf a:hover {
+#about #main #section3 p.pdf a:hover {
 	opacity:  1;
 }
-#top #main #section3 .slider2 {
+#about #main #section3 .slider2 {
 	display: block;
 	width: 80%;
 	margin: 0 auto;
 }
-#top #main #section3 .slider2 .slick-slide img {
+#about #main #section3 .slider2 .slick-slide img {
 	width: auto;
 }
-#top #main #section4 {
+#about #main #section4 {
 	width: 100%;
 	padding: 40px 0;
 }
-#top #main #section4 h2 {
+#about #main #section4 h2 {
 	width: 100%;
 }
-#top #main #section4 h2 img {
+#about #main #section4 h2 img {
 	width: 55px;
 }
-#top #main #section4 p.sub {
+#about #main #section4 p.sub {
 	font-size: 11px;
 	margin-bottom: 32px;
 }
-#top #main #section4 dl {
+#about #main #section4 dl {
 	box-sizing: border-box;
 	width: 92%;
 	margin: 0 auto 30px;
 	padding: 18px 10px 30px;
 }
-#top #main #section4 dl dt {
+#about #main #section4 dl dt {
 	padding: 40px 0 35px;
 	background-image: url(../../img/top/sec4_img1.png), url(../../img/top/sec4_img2.png);
 	background-position: center top, center bottom;
@@ -173,34 +173,34 @@
 	font-size: 14px;
 	margin-bottom: 16px;
 }
-#top #main #section4 dl dd {
+#about #main #section4 dl dd {
 	padding: 0 18px;
 }
-#top #main #section4 dl dd .right {
+#about #main #section4 dl dd .right {
 	float: none;
 	width: 100%;
 }
-#top #main #section4 dl dd img {
+#about #main #section4 dl dd img {
 	float: none;
 	width: auto;
 }
-#top #main #section4 dl dd p {
+#about #main #section4 dl dd p {
 	float: none;
 	width: 380px;
 }
-#top #main #section4 dl dd p.text1 {
+#about #main #section4 dl dd p.text1 {
 	width: 100%;
 	font-size: 13px;
 	padding-bottom: 8px;
 	margin-bottom: 12px;
 	text-align: center;
 }
-#top #main #section4 dl dd p.text2 {
+#about #main #section4 dl dd p.text2 {
 	width: 100%;
 	font-size: 12px;
 	margin-bottom: 10px;
 }
-#top #main #section4 p.pdf a {
+#about #main #section4 p.pdf a {
 	font-size: 11px;
 	text-align: center;
 	display: block;
@@ -211,42 +211,42 @@
 	padding: 14px 0;
 	border-radius: 4px;
 }
-#top #main #section5 h2 {
+#about #main #section5 h2 {
 	width: 100%;
 }
-#top #main #section5 h2 img {
+#about #main #section5 h2 img {
 	width: 78px;
 }
-#top #main #section5 p.sub {
+#about #main #section5 p.sub {
 	font-size: 11px;
 	margin-bottom: 32px;
 }
-#top #main #section5 table  {
+#about #main #section5 table  {
 	width: 92%;
 	display: block;
 	margin: 0 auto;
 }
-#top #main #section5 table tbody {
+#about #main #section5 table tbody {
 	display: block;
 	width: 100%;
 }
-#top #main #section5 table tr {
+#about #main #section5 table tr {
 	display: block;
 	width: 100%;
 	border-bottom: 1px solid #e2e2e2;
 	padding: 14px 0;
 }
-#top #main #section5 table tr:first-child {
+#about #main #section5 table tr:first-child {
 	border-top: 1px solid #e2e2e2;
 }
-#top #main #section5 table th {
+#about #main #section5 table th {
 	display: block;
 	width: 100%;
 	font-size: 12px;
 	text-align: center;
 	padding: 0;
 }
-#top #main #section5 table td {
+#about #main #section5 table td {
 	display: block;
 	width: 100%;
 	text-align: center;

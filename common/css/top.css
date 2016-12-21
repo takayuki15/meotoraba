@@ -244,6 +244,17 @@
 #top #main #section4 a.btn:hover {
 	opacity: 0.7;
 }
+#top #main #section4 p.pdf a {
+	font-size: 14px;
+	text-align: center;
+	display: block;
+	width: 422px;
+	margin: 10px auto 0;
+	color: #FFF;
+	background-color: #e50012;
+	padding: 18px 0;
+	border-radius: 4px;
+}
 #top #main #section5 {
 	width: 100%;
 	background: url(../../img/top/bg1.gif) left top repeat;

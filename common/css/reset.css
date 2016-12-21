@@ -1,0 +1,105 @@
+/**************************************************************************************************
+INITIAL SETTINGS --- Reset StyleSheet
+2012.6.25 add support html5
+**************************************************************************************************/
+@charset "utf-8";
+
+/* Commonness CSS */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size: 100%; background:transparent;}
+
+html {height:100%;}
+body {width:100%;height:100%;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;line-height:130%;letter-spacing:0px;}
+/* * html body { font-family: 'ＭＳ Ｐゴシック',sans-serif;  }  IE6 */
+
+img{line-height:1.0;}
+ul {list-style:none;}
+blockquote, q {quotes:none;}
+/* remember to define focus styles! */
+:focus {outline:0;}
+/* remember to highlight inserts somehow! */
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse:collapse; border-spacing:0;}
+/*\*/
+* html #container{overflow:visible;}
+/**/
+input, select, textarea {font-size:12px; color:#333;}
+/* - ClearFix ------------------------------------------------------ */
+* html .clearfix{ zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+.clearfix {display:inline-table; }
+/* Hides from IE-mac \*/
+* html .clearfix {height:1%;}
+.clearfix {display:block;}
+/* End hide from IE-mac */
+* {	-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+/* Hides from IE5-Mac \*/
+* html .foo { height: 1%; }
+
+/****************************************************/
+/* for html5. from html5doctor.com Reset Stylesheet */
+/****************************************************/
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display:block;
+}
+nav ul {
+    list-style:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+img{vertical-align:bottom;}
+
+/* for placeholder color */
+:-ms-input-placeholder{
+	color:#999 !important;
+}
+::-webkit-input-placeholder{
+	color:#999 !important;
+}
+::-moz-placeholder{
+	color:#999 !important;
+}
+:-moz-placeholder{
+	color:#999 !important;
+}
+::-input-placeholder{
+	color:#999 !important;
+}
+:-input-placeholder{
+	color:#999 !important;
+}
+::-placeholder{
+	color:#999 !important;
+}
+:-placeholder{
+	color:#999 !important;
+}

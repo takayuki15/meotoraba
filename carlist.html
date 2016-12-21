@@ -34,6 +34,7 @@
 <link href="common/css/slick.css" rel="stylesheet" type="text/css" media="all">
 <link href="common/css/slick-theme.css" rel="stylesheet" type="text/css" media="all">
 <link href="common/css/jquery.jscrollpane.css" rel="stylesheet" type="text/css" media="all" >
+<link href="common/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" >
 
 <!--Javascript-->
 <script type="text/javascript" src="common/js/jquery-1.11.3.min.js"></script>
@@ -54,6 +55,19 @@
   ga('create', 'UA-86644732-1', 'auto');
   ga('send', 'pageview');
 
+</script>
+<script type="text/javascript">
+$(function() {
+$('#all').on('click', function() {
+	allRemove('.check');
+});
+$('.check').on('click', function() {
+		allRemove('#all');
+});
+function allRemove(value) {
+	$(value).prop('checked', false);
+}
+});
 </script>
 </head>
 
@@ -92,57 +106,77 @@
   <div id="section2">
   	<div class="content">
 			<h2 class="ttl"><img src="img/top/ttl_stock.png" alt="Stock List"></h2>
-			<p class="sub st"><strong>私たちの信念</strong></p>
-			<p class="sub">私たちメオトラバは、常にお客様に<br />安心してお乗りいただける「高品質」な輸入中古車との出会いを導きます。</p>
-      <h2 class="sub-ttl">代表挨拶</h2>
-      <p class="detail">メオトラバは、日免オートシステムとして、新たなチャレンジを具体的な形にした販売店です。長年にわたって培ってきた、地元の皆様とのつながり、車を愛する皆様との交流を大切にして参ります。スタッフ一人一人が真摯仕事に向き合い、人生をより豊かにする一台を一緒にお探し致します。お客様の小さな疑問にも、スタッフ一同解決に向けて全力で取り組むからこそ、「安心」「高品質」な中古輸入車をお客様へご提供できるのです。輸入車の素晴らしさを皆様に伝え、お客様のカーライフを豊かにするお手伝いできれば幸いです。</p>
-			<p class="daihyo">代表取締役 山田太朗</p>
-      <img class="daihyo" src="img/about/img1.png" alt="代表挨拶">
+			<p class="sub st"><strong>お探しのクルマを見つける</strong></p>
+			<a class="red_btn" href="#" target="_blank">Goonetで見る</a>
+			<div class="search">
+				<div>メーカー・ブランド<span>※複数選択可</span></div>
+				<div class="row">
+					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> メルセデス・ベンツ</label>
+					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> BMW</label>
+					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> フォルクスワーゲン</label>
+					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> アウディ</label>
+					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> MINI</label>
+					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> ボルボ</label>
+					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> プジョー</label>
+					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> ポルシェ</label>
+					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> チェロキー</label>
+					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> レイジーローバー</label>
+				</div>
+				<div style="text-align:right;"><a for="all" id="all"> 条件をリセット</a></div>
+			</div>
     </div><!-- /.content -->
 	</div><!-- /#section2 -->
 
-  <div id="section3">
-		<div class="content">
-			<h2 class="ttl"><img src="img/top/ttl_stock.png" alt="Stock List"></h2>
-			<p class="sub st"><strong>メオトラバの強み</strong></p>
-			<div class="advantage-item">
-				<h2 class="sub-ttl">輸入中古車の4WD専門店</h2>
-				<p class="detail">私たちは、取り扱う車を「輸入車」「4WD」というテーマで絞り込むことによって、北海道における先鋭化したお客様のニーズに的確に答えることができます。</p>
-				<img src="img/about/tmp.png" alt="">
+	<div id="section3">
+  	<div id="stock_list" class="content">
+
+			<div class="product pc_only">
+				<ul class="clearfix">
+					<li><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="img/car1.png" alt=""></a></li>
+					<li><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="img/car2.png" alt=""></a></li>
+					<li class="right"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="img/car3.png" alt=""></a></li>
+					<li><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="img/car4.png" alt=""></a></li>
+					<li><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="img/car5.png" alt=""></a></li>
+					<li class="right"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="img/car6.png" alt=""></a></li>
+				</ul>
 			</div>
-			<div class="advantage-item">
-				<h2 class="sub-ttl">長年養った選択眼</h2>
-				<p class="detail">メオトラバには経験豊かなスタッフがおります。日免オートシステムとして、車両を扱い続けて52年、この期間に培った長年の選択眼でより良い車両を揃えます。</p>
-				<img src="img/about/tmp.png" alt="">
-			</div>
-			<div class="advantage-item">
-				<h2 class="sub-ttl">スタッフの情熱</h2>
-				<p class="detail">お客様のご要望、豊かなカーライフをサポートするために全スタッフが情熱を持ち、日々仕事に取り組んでいます。お客様の小さな疑問にも、私たちは全力を持ってお答え致します。</p>
-				<img src="img/about/tmp.png" alt="">
-			</div>
-		</div><!-- /.content -->
+
+      <div class="slider2 sp_only">
+        <div class="slick-slide"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="img/car1.png" alt=""></a></div>
+        <div class="slick-slide"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="img/car2.png" alt=""></a></div>
+        <div class="slick-slide"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="img/car3.png" alt=""></a></div>
+        <div class="slick-slide"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="img/car4.png" alt=""></a></div>
+        <div class="slick-slide"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="img/car5.png" alt=""></a></div>
+        <div class="slick-slide"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="img/car6.png" alt=""></a></div>
+      </div>
+
+    </div>
 	</div><!-- /#section3 -->
 
-  <div id="section4">
+	<div id="section4">
   	<div class="content">
 			<h2 class="ttl"><img src="img/top/ttl_stock.png" alt="Stock List"></h2>
-			<p class="sub st"><strong>4WDの輸入車を、適切な価格、サービスでご提供し、素敵なクルマ探しをサポートいたします。</strong></p>
-      <dl>
-      	<dt>全車1年の保証付きです。<br class="sp_only">（走行距離は無制限です）</dt>
-        <dd class="clearfix">
-        	<div class="right">
-          	<p class="text1">メオトラバの取扱車輛について</p>
-          	<p class="text2">全車４ＷＤ、高品質の輸入車です。<br>
-          	修復歴はありません。<br>
-          	車検、点検、板金修理などは自社工場を完備しております。<br>
-          	安心してお任せください。</p>
-          </div>
-          <img src="img/top/sec4_img3.png" alt="メオトラバ　オリジナルの安心の保証サービス">
-        </dd>
-      </dl>
-		  <p class="pdf"><a href="service.html" target="_blank">サービス一覧を詳しく見る</a></p>
-    </div>
-  </div><!-- /#section4 -->
+			<p class="sub st"><strong>お探しのクルマを見つける</strong></p>
+			<a class="red_btn" href="#" target="_blank">Goonetで見る</a>
+			<div class="search">
+				<div class="upper-item"><img src="img/carlist/caricon.png" alt="caricon" /></div>
+				<div>メーカー・ブランド<span>※複数選択可</span></div>
+				<div class="row">
+					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> メルセデス・ベンツ</label>
+					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> BMW</label>
+					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> フォルクスワーゲン</label>
+					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> アウディ</label>
+					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> MINI</label>
+					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> ボルボ</label>
+					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> プジョー</label>
+					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> ポルシェ</label>
+					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> チェロキー</label>
+					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> レイジーローバー</label>
+				</div>
+				<div style="text-align:right;"><a for="all" id="all"> 条件をリセット</a></div>
+			</div>
+    </div><!-- /.content -->
+	</div><!-- /#section4 -->
 
 </div><!-- /#main -->
 

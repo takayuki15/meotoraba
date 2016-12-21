@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /*============================
-# 在庫一覧
+# お知らせ一覧
 ============================*/
 #news #main{
 	width:100%;
@@ -76,4 +76,63 @@
 }
 #news #main #section2 .row .right-item {
   border-left: solid 2px #666666;
+}
+/*============================
+# お知らせ
+============================*/
+#article #main{
+	width:100%;
+	margin:0;
+}
+#article #main .content {
+	width: 1000px;
+	margin: 0 auto;
+}
+#article #main .content p {
+	margin: 25px auto;
+}
+#article #main h2.ttl {
+	text-align: center;
+  margin: 0 0 14px;
+}
+#article #main #section1 {
+	width: 100%;
+	position: relative;
+}
+#article #main #section1 img {
+	width: 100%;
+}
+#article #main #section2 h2 {
+	color: #808080;
+	font-size: 34px;
+	font-weight: normal;
+	padding: 0 0 14px;
+	border-bottom: 1px solid #808080;
+	margin: 40px 0 30px;
+}
+#article #main #section2 span.date {
+	position: absolute;
+	top: 10px;
+  right: 0;
+  padding: 2px 5px;
+  border: solid 1px #000;
+  border-radius: 5px;
+}
+#article #main #section2 h3 {
+	color: #333;
+  font-size: 20px;
+  background-color: #eeeeee;
+  width: 60%;
+  padding: 10px 20px;
+}
+#article #main #section2 a.red_btn {
+	font-size: 14px;
+  text-align: center;
+  display: block;
+  width: 172px;
+  margin: 10px 0 30px auto;
+  color: #FFF;
+  background-color: #e50012;
+  padding: 6px 0;
+  border-radius: 4px;
 }

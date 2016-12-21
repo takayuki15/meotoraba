@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+/*============================
+# 在庫一覧
+============================*/
+#contact #main{
+	width:100%;
+	margin:0;
+}
+#contact #main .content {
+	width: 1000px;
+	margin: 0 auto;
+}
+#contact #main h2.ttl {
+	text-align: center;
+  margin: 0 0 14px;
+}
+#contact #main p.sub {
+	color: #000;
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 48px;
+}
+#contact #main p.st.sub {
+	margin-bottom: 24px;
+}
+#contact #main #section1 {
+	width: 100%;
+	position: relative;
+}
+#contact #main #section1 img {
+	width: 100%;
+}
+#contact #main #section2 {
+	width: 100%;
+	padding: 66px 0 0;
+	border-bottom: 1px solid #d5d5d5;
+	-moz-box-shadow: 0px 0px 10px #d5d5d5;
+	-webkit-box-shadow: 0px 0px 10px #d5d5d5;
+	box-shadow: 0px 0px 10px #d5d5d5;
+}
+#contact #main #section2 .content {
+	position: relative;
+	padding: 0 0 60px;
+}
+#contact #main #section2 p {
+	font-size: 14px;
+}
+#contact #main #section2 .icon_ttl {
+	margin-top: 10px;
+}
+#contact #main #section2 form.contact_form {
+	position: relative;
+	padding: 30px 30px 20px;
+	border: 1px solid #d5d5d5;
+}
+#contact #main #section2 form.contact_form img.stroke {
+	width: 100%;
+	margin-bottom: 15px;
+}
+#contact #main #section2 form.contact_form div.upper-item {
+  text-align: center;
+	margin-bottom: 20px;
+}
+#contact #main #section2 form.contact_form div.upper-item .others {
+  text-align: left;
+	padding-left: 15px;
+}
+#contact #main #section2 form.contact_form div.upper-item .textarea {
+	width: 97%;
+  margin: 5px 15px;
+  height: 100px;
+}
+#contact #main #section2 form.contact_form div.upper-item .note {
+	background-color: #E2E2E2;
+	width: 95%;
+	margin: auto;
+  padding: 7px 0;
+}
+#contact #main #section2 a.red_btn {
+	position: absolute;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  width: 172px;
+  /* margin: auto; */
+  color: #FFF;
+  background-color: #e50012;
+  padding: 6px 0;
+  border-radius: 4px;
+  right: 0;
+  top: 15%;
+}
+#contact #main #section2 a.red_btn:hover {
+	opacity: 0.7;
+}
+#contact #main #section2 .row {
+  margin: 20px 0;
+}
+#contact #main #section2 .row .form_item {
+  text-align: left;
+}
+#contact #main #section2 .row .form_item select {
+	position: relative;
+	width: 100%;
+  margin-top: 5px;
+  border: solid 1px #bbb;
+	color: #aaa;
+	padding:0 8px;
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+#contact #main #section2 .row .form_item label {
+	position: relative;
+  width: 100%;
+	font-weight: normal;
+}
+#contact #main #section2 .row .form_item label::after {
+	display: block;
+  content: " ";
+  position: absolute;
+  top: 12px;
+  right: 8px;
+  width: 15px;
+  height: 15px;
+  background: url(img/arrow_down.png) 0 0 no-repeat;
+  background-size: 15px;
+  pointer-events: none;
+}
+#contact #main #section2 .middle_item {
+	width: 70%;
+	margin: auto;
+	text-align: center;
+}
+#contact #main #section2 .middle_item .row {
+	text-align: left;
+}
+#contact #main #section2 .middle_item .row span {
+	color: #E50012;
+}
+#contact #main #section2 .middle_item .row label, #contact #main #section2 .middle_item .row input {
+	width: 100%;
+	font-weight: normal;
+}
+#contact #main #section2 .middle_item .row input {
+  margin-top: 5px;
+}
+#contact #main #section2 .lower_item {
+	width: 80%;
+	margin: auto;
+}
+#contact #main #section2 .contact_btn {
+	float: left;
+	background-color: #e50012;
+	border-radius: 4px;
+	margin: 16px 0 0;
+}
+#contact #main #section2 .contact_btn a {
+	display: block;
+	color: #FFF;
+	font-size: 14px;
+	padding: 16px 64px;
+}
+#contact #main #section2 .contact_btn:hover {
+	opacity: 0.7;
+}

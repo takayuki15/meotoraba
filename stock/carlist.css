@@ -1,0 +1,382 @@
+@charset "utf-8";
+
+/*============================
+# 在庫一覧
+============================*/
+#carlist #main{
+	width:100%;
+	margin:0;
+}
+#carlist #main .content {
+	width: 1000px;
+	margin: 0 auto;
+}
+#carlist #main h2.ttl {
+	text-align: center;
+  margin: 0 0 14px;
+}
+#carlist #main p.sub {
+	color: #000;
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 48px;
+}
+#carlist #main p.st.sub {
+	margin-bottom: 24px;
+}
+#carlist #main #section1 {
+	width: 100%;
+	position: relative;
+}
+#carlist #main #section1 img {
+	width: 100%;
+}
+#carlist #main #section2 {
+	width: 100%;
+	padding: 66px 0 0;
+	border-bottom: 1px solid #d5d5d5;
+	-moz-box-shadow: 0px 0px 10px #d5d5d5;
+	-webkit-box-shadow: 0px 0px 10px #d5d5d5;
+	box-shadow: 0px 0px 10px #d5d5d5;
+}
+#carlist #main #section2 .content {
+	position: relative;
+	padding: 0 0 60px;
+}
+#carlist #main #section2 p {
+	font-size: 14px;
+}
+#carlist #main #section2 a.red_btn {
+	position: absolute;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  width: 172px;
+  /* margin: auto; */
+  color: #FFF;
+  background-color: #e50012;
+  padding: 6px 0;
+  border-radius: 4px;
+  right: 0;
+  top: 15%;
+}
+#carlist #main #section2 div.search {
+	position: relative;
+	padding: 30px 30px 20px;
+	border: 1px solid #d5d5d5;
+}
+#carlist #main #section2 div.search span {
+	font-size: 12px;
+	font-weight: bold;
+}
+#carlist #main #section2 div.search label {
+  font-weight: normal;
+}
+#carlist #main #section2 .row {
+  margin: 20px 0;
+}
+#carlist #main #section2 #all {
+	margin-right: 20px;
+}
+#carlist #main #section3 {
+	width: 100%;
+	border-bottom: 1px solid #d5d5d5;
+	padding: 40px 0 50px;
+}
+#carlist #main #section3 h2 {
+	text-align: center;
+	margin: 0 0 14px;
+}
+#carlist #main #section3 .slider2 {
+	display:  none;
+}
+#carlist #main #section3 .product ul li {
+	float:  left;
+	width: 315px;
+	margin-bottom:  22px;
+	margin-right: 26px;
+}
+#carlist #main #section3 .product ul li img {
+	width:  100%;
+	height:  auto;
+}
+#carlist #main #section3 .product ul li.right {
+	margin-right:  0;
+}
+#carlist #main #section3 p.sub {
+	color: #000;
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 48px;
+}
+#carlist #main #section3 .slider2 .slick-slide img {
+	width: 312px;
+}
+#carlist #main #section3 ul li a:hover {
+	opacity: 0.7;
+}
+#carlist #main #section3 p.pdf a {
+	font-size: 14px;
+	text-align: center;
+	display: block;
+	width: 422px;
+	margin: 10px auto 0;
+	color: #FFF;
+	background-color: #e50012;
+	padding: 18px 0;
+	border-radius: 4px;
+}
+#carlist #main #section3 p.pdf a:hover {
+	opacity:  0.7;
+}
+#carlist #main #section4 {
+	width: 100%;
+	padding: 66px 0 0;
+	border-bottom: 1px solid #d5d5d5;
+	-moz-box-shadow: 0px 0px 10px #d5d5d5;
+	-webkit-box-shadow: 0px 0px 10px #d5d5d5;
+	box-shadow: 0px 0px 10px #d5d5d5;
+}
+#carlist #main #section4 .content {
+	position: relative;
+	padding: 0 0 60px;
+}
+#carlist #main #section4 p {
+	font-size: 14px;
+}
+#carlist #main #section4 a.red_btn {
+	position: absolute;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  width: 172px;
+  /* margin: auto; */
+  color: #FFF;
+  background-color: #e50012;
+  padding: 6px 0;
+  border-radius: 4px;
+  right: 0;
+  top: 15%;
+}
+#carlist #main #section4 div.search {
+	position: relative;
+	padding: 30px 30px 20px;
+	border: 1px solid #d5d5d5;
+}
+#carlist #main #section4 div.search div.upper-item {
+  text-align: center;
+	margin-bottom: 20px;
+}
+#carlist #main #section4 div.search span {
+	font-size: 12px;
+	font-weight: bold;
+}
+#carlist #main #section4 div.search label {
+  font-weight: normal;
+}
+#carlist #main #section4 .row {
+  margin: 20px 0;
+}
+#carlist #main #section4 #all {
+	margin-right: 20px;
+}
+/*============================
+# 在庫詳細
+============================*/
+#car #main{
+	width:100%;
+	margin:0;
+}
+#car #main .content {
+	width: 1000px;
+	margin: 0 auto;
+}
+#car #main h2.ttl {
+	text-align: center;
+  margin: 0 0 14px;
+}
+#car #main p.sub {
+	color: #000;
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 48px;
+}
+#car #main p.st.sub {
+	margin-bottom: 24px;
+}
+#car #main #section1 {
+	width: 100%;
+	position: relative;
+}
+#car #main #section1 img {
+	width: 100%;
+}
+#car #main #section2 {
+	width: 100%;
+	padding: 66px 0 0;
+	border-bottom: 1px solid #d5d5d5;
+	-moz-box-shadow: 0px 0px 10px #d5d5d5;
+	-webkit-box-shadow: 0px 0px 10px #d5d5d5;
+	box-shadow: 0px 0px 10px #d5d5d5;
+}
+#car #main #section2 .content {
+	position: relative;
+	padding: 0 0 60px;
+}
+#car #main #section2 p {
+	font-size: 14px;
+}
+#car #main #section2 img.partation {
+	margin: 30px 0;
+}
+#car #main #section2 .lower_item {
+	width: 70%;
+	margin: auto;
+}
+#car #main #section2 .contact_btn {
+	float: left;
+	background-color: #e50012;
+	border-radius: 4px;
+	margin: 16px 0 0;
+}
+#car #main #section2 .contact_btn a {
+	display: block;
+	color: #FFF;
+	font-size: 14px;
+	padding: 16px 64px 16px 110px;
+	background: url(../img/common/icn_contact.png) 70px 18px no-repeat;
+}
+#car #main #section2 .contact_btn:hover {
+	opacity: 0.7;
+}
+#car #main #section3 {
+	width: 100%;
+	padding: 40px 0 50px;
+	border-bottom: 1px solid #d5d5d5;
+	-moz-box-shadow: 0px 0px 10px #d5d5d5;
+	-webkit-box-shadow: 0px 0px 10px #d5d5d5;
+	box-shadow: 0px 0px 10px #d5d5d5;
+}
+#car #main #section3 h2 {
+	text-align: center;
+	margin: 0 0 14px;
+}
+#car #main #section3 p.sub {
+	color: #000;
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 48px;
+}
+#car #main #section3 dl {
+	box-sizing: border-box;
+	width: 800px;
+	margin: 0 auto 26px;
+	border: 1px solid #c8c8c8;
+	padding: 26px 62px 42px;
+}
+#car #main #section3 dl dt {
+	padding: 40px 0 35px;
+	background-image: url(img/sec4_img1.png), url(img/sec4_img2.png);
+	background-position: center top, center bottom;
+	background-repeat: no-repeat, no-repeat;
+	text-align: center;
+	color: #E50012;
+	font-size: 22px;
+	margin-bottom: 36px;
+}
+#car #main #section3 dl dd img {
+	float: left;
+	width: 274px;
+	height: auto;
+}
+#car #main #section3 dl dd .right {
+	float: right;
+	width: 380px;
+}
+#car #main #section3 dl dd p {
+	width: 380px;
+}
+#car #main #section3 dl dd p.text1 {
+	color: #808080;
+	font-size: 20px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #808080;
+	margin-bottom: 24px;
+}
+#car #main #section3 dl dd p.text2 {
+	color: #808080;
+	font-size: 14px;
+}
+#car #main #section3 a.btn {
+	display: block;
+	width: 246px;
+	color: #FFF;
+	font-size: 14px;
+	padding: 6px 0;
+	text-align: center;
+	margin: 0 auto;
+	background-color: #e50012;
+	border-radius: 4px;
+}
+#car #main #section3 a.btn:hover {
+	opacity: 0.7;
+}
+#car #main #section3 p.pdf a {
+	font-size: 14px;
+	text-align: center;
+	display: block;
+	width: 422px;
+	margin: 10px auto 0;
+	color: #FFF;
+	background-color: #e50012;
+	padding: 18px 0;
+	border-radius: 4px;
+}
+#car #main #section4 {
+	width: 100%;
+	padding: 66px 0 0;
+	border-bottom: 1px solid #d5d5d5;
+	-moz-box-shadow: 0px 0px 10px #d5d5d5;
+	-webkit-box-shadow: 0px 0px 10px #d5d5d5;
+	box-shadow: 0px 0px 10px #d5d5d5;
+}
+#car #main #section4 .content {
+	position: relative;
+	padding: 0 0 60px;
+}
+#car #main #section4 p {
+	font-size: 14px;
+}
+#car #main #section4 a.red_btn {
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  width: 172px;
+  margin: auto 0 20px auto;
+  color: #FFF;
+  background-color: #e50012;
+  padding: 6px 0;
+  border-radius: 4px;
+}
+#car #main #section4 div.search {
+	position: relative;
+	padding: 30px 30px 20px;
+	border: 1px solid #d5d5d5;
+}
+#car #main #section4 div.search div.upper-item {
+  text-align: center;
+	margin-bottom: 20px;
+}
+#car #main #section4 div.search span {
+	font-size: 12px;
+	font-weight: bold;
+}
+#car #main #section4 div.search label {
+  font-weight: normal;
+}
+#car #main #section4 .row {
+  margin: 20px 0;
+}
+#car #main #section4 #all {
+	margin-right: 20px;
+}

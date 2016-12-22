@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+/*============================
+# お知らせ一覧
+============================*/
 #news #main {
 	width: 100%;
 	margin: 0;
@@ -37,5 +40,60 @@
   padding: 15px;
 }
 #news #main #section2 p {
+	font-size: 10px;
+}
+/*============================
+# お知らせ
+============================*/
+#article #main {
+	width: 100%;
+	margin: 0;
+	padding:0;
+}
+#article #main .content {
+	width: 100%;
+	margin: 0;
+}
+#article #main #section1 {
+	padding-top: 20px;
+}
+#article #main #section2 {
+	padding: 40px 0 20px;
+}
+#article #main #section2 .content {
+	width: 100%;
+	padding: 0 20px;
+}
+#article #main #section2 h2 {
+	font-size: 20px;
+	text-align: left;
+	padding-bottom: 6px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+#article #main #section2 h3 {
+  width: 100%;
+}
+#article #main #section2 .sub_ttl {
+	font-size: 15px;
+  color: #808080;
+}
+#article #main #section2 img {
+	position: static;
+	width: 100%;
+}
+#article #main #section2 a.red_btn {
+	width: 100%;
+}
+#article #main #section2 span.date {
+	position: static;
+}
+#article #main #section2 .row .left-item {
+  display: inline;
+}
+#article #main #section2 .row .right-item {
+  padding: 15px;
+}
+#article #main #section2 p {
 	font-size: 10px;
 }

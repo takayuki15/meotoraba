@@ -61,7 +61,7 @@
     position: absolute;
     display: block;
     right: 10px;
-    top: 26px;
+    top: 35%;
     content: "";
     height: 16px;
     width: 13px;
@@ -73,9 +73,10 @@
 }
 #news #main #section2 .row .left-item {
   text-align: right;
+	border-right: solid 2px #666666;
 }
 #news #main #section2 .row .right-item {
-  border-left: solid 2px #666666;
+  /*border-left: solid 2px #666666;*/
 }
 /*============================
 # お知らせ

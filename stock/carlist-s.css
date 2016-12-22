@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+/*============================
+# 在庫一覧
+============================*/
+
 #carlist #main {
 	width: 100%;
 	margin: 0;
@@ -268,4 +272,158 @@
 	right: 20px;
 	bottom: 0;
 	top: initial;
+}
+
+/*============================
+# 在庫詳細
+============================*/
+#car #main {
+	width: 100%;
+	margin: 0;
+	padding:0;
+}
+#car #main .content {
+	width: 100%;
+	margin: 0;
+}
+#car #main #section1 {
+	padding-top: 20px;
+}
+#car #main #section2 {
+	padding: 40px 20px 20px;
+}
+#car #main #section2 .content {
+	width: 100%;
+	padding-top: 50px;
+}
+#car #main #section2 .content .partation {
+  margin: 25px 0 0;
+}
+#car #main #section2 .content .upper_item > img {
+	position: absolute;
+  top: 0;
+  left: 0;
+}
+#car #main #section2 .content .lower_item {
+  width: 100%;
+}
+#car #main div.search {
+	padding: 30px 10px 20px;
+	margin: 0 20px;
+}
+#car #main div.search span {
+    font-size: 11px !important;
+    font-weight: normal !important;
+}
+#car #main .search select {
+	position: relative;
+	width: 100%;
+  margin-top: 5px;
+  border: solid 1px #bbb;
+	color: #aaa;
+	padding:0 8px;
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+#car #main .search label {
+	position: relative;
+  width: 100%;
+	font-weight: normal;
+}
+#car #main .search label::after {
+	display: block;
+  content: " ";
+  position: absolute;
+  top: 12px;
+  right: 8px;
+  width: 15px;
+  height: 15px;
+  background: url(img/arrow_down.png) 0 0 no-repeat;
+  background-size: 15px;
+  pointer-events: none;
+}
+#car #main #section2 h2 {
+	width: 100%;
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 6px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+#car #main #section2 .contact_btn {
+  width: 100%;
+	float: none;
+}
+#car #main #section2 .contact_btn a.tell {
+	padding-top: 10px;
+	margin-bottom: 0;
+}
+#car #main #section2 p {
+	font-size: 12.5px;
+}
+#car #main #section3 dl {
+	box-sizing: border-box;
+	width: 92%;
+	margin: 0 auto 30px;
+	padding: 18px 10px 30px;
+}
+#car #main #section3 dl dt {
+	padding: 40px 0 35px;
+	background-image: url(../../img/top/sec4_img1.png), url(../../img/top/sec4_img2.png);
+	background-position: center top, center bottom;
+	background-repeat: no-repeat, no-repeat;
+	text-align: center;
+	color: #E50012;
+	font-size: 14px;
+	margin-bottom: 16px;
+}
+#car #main #section3 dl dd {
+	padding: 0 18px;
+}
+#car #main #section3 dl dd .right {
+	float: none;
+	width: 100%;
+}
+#car #main #section3 dl dd img {
+	float: none;
+	width: auto;
+}
+#car #main #section3 dl dd p {
+	float: none;
+	width: 380px;
+}
+#car #main #section3 dl dd p.text1 {
+	width: 100%;
+	font-size: 13px;
+	padding-bottom: 8px;
+	margin-bottom: 12px;
+	text-align: center;
+}
+#car #main #section3 dl dd p.text2 {
+	width: 100%;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+#car #main #section3 p.pdf a {
+	font-size: 11px;
+	text-align: center;
+	display: block;
+	width: 90%;
+	margin: 10px auto 0;
+	color: #FFF;
+	background-color: #e50012;
+	padding: 14px 0;
+	border-radius: 4px;
+}
+#car #main #section4 {
+	padding-top: 40px;
+}
+#car #main #section4 .content {
+	padding-bottom: 65px;
+}
+#car #main #section4 .goonet {
+	position: absolute;
+  bottom: 0;
+  right: 20px;
 }

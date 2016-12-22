@@ -68,6 +68,17 @@ function allRemove(value) {
 	$(value).prop('checked', false);
 }
 });
+$(function() {
+$('#all_sp').on('click', function() {
+	clearSelectBox();
+});
+function clearSelectBox(){
+    $('.sp_only select').each(function() {
+        $(this).children('option').removeAttr('selected'); //optionのselected要素の削除
+        this.selectedIndex= 0; //selectIndexを0に設定。
+    });
+}
+});
 </script>
 </head>
 
@@ -99,18 +110,53 @@ function allRemove(value) {
 <div id="main">
 
   <div id="section1">
-  	<img src="img/slide2.png" class="pc_only" alt="About Us MEOTORABAとは">
-    <img src="img/carlist/slide1.png" class="sp_only" alt="走る喜び　魅せる喜び　人生の喜び">
+  	<img src="img/slide2.png" class="pc_only" alt="在庫車庫詳細">
+    <img src="img/slide1_sp.png" class="sp_only" alt="在庫車庫詳細">
   </div><!-- /#section1 -->
 
   <div id="section2">
   	<div class="content">
-			<div>
+			<div class="row upper_item">
+
+				<img class="sp_only" src="img/car_name01.png" />
+				<div class="slider2 col-sm-7">
+					<div class="slick-slide"><img src="img/car01.jpg" alt=""></div>
+					<div class="slick-slide"><img src="img/car02.jpg" alt=""></div>
+					<div class="slick-slide"><img src="img/car03.jpg" alt=""></div>
+				</div>
+
+				<div class="col-sm-5">
+					<div class="first_row">
+						<img class="pc_only" src="img/car_name01.png" />
+						<div class="sub_ttl">車両本体価格</div>
+						<div class="price"><span class="large">214</span><span class="normal">万円</span>(消費税込)</div>
+						<ul>
+							<li>修復履歴</li>
+							<li>リ済別</li>
+						</ul>
+					</div>
+					<div class="second_row">
+						<div class="sub_ttl">車両本体情報</div>
+						<div>H23/検なし/ホワイトⅡ/ガソリン/48,000km/MT/キセノン/ヘッドライト・純正アルミホイール・社外カーナビ</div>
+						<span>301</span>
+					</div>
+					<div class="third_row">
+						<div>スタッフのイチオシポイント</div>
+						<p>イチオシポイントイチオシポイントイチオシポイントイチオシポイントイチオシポイントイチオシポイントイチオシポイントイチオシポイント。</p>
+					</div>
+				</div>
+
 			</div>
-			<img src="img/sec2_stroke.png" class="partation" />
+
+			<div class="goonet pc_only"><a href="#" target="_blank">Goonetで詳細情報を見る</a></div>
+			<img class="pc_only partation" src="img/sec2_stroke.png" />
+			<img class="sp_only partation" src="img/sec2_stroke_sp.png" />
 			<div class="row lower_item">
 				<div class="col-sm-7" style="color:#e50012;">
-					<img src="img/img_phone_red.png" alt="011-594-8282">
+					<div class="contact_btn sp_only">
+						<a class="tell" href="tel:0115948282">011-594-8282</a>
+					</div>
+					<img class="pc_only" src="img/img_phone_red.png" alt="011-594-8282">
 					<p style="margin:10px 0 0;">FAX 011-594-8332</p>
 					<p class="time">営業時間:AM 10:00～PM 7:00　　定休日:毎週火曜日</p>
 				</div>
@@ -146,11 +192,14 @@ function allRemove(value) {
 
 	<div id="section4">
   	<div class="content">
-			<div><a class="red_btn" href="#" target="_blank">Goonetで見る</a></div>
+			<div class="goonet"><a class="red_btn" href="#" target="_blank">Goonetで見る</a></div>
 			<div class="search">
-				<div class="upper-item"><img src="img/caricon.png" alt="caricon" /></div>
+				<div class="upper-item">
+					<img src="img/icon_car.png" alt="caricon" />
+				  <div  class="icon_ttl">条件を変えて絞り込む</div>
+			 </div>
 				<div>メーカー・ブランド<span>※複数選択可</span></div>
-				<div class="row">
+				<div class="row pc_only">
 					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> メルセデス・ベンツ</label>
 					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> BMW</label>
 					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> フォルクスワーゲン</label>
@@ -162,7 +211,23 @@ function allRemove(value) {
 					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> チェロキー</label>
 					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> レイジーローバー</label>
 				</div>
-				<div style="text-align:right;"><a for="all" id="all"> 条件をリセット</a></div>
+				<label class="sp_only">
+					<select name="maker" size="1" multiple>
+						<option value="---">指定なし</option>
+						<option value="メルセデス・ベンツ">メルセデス・ベンツ</option>
+						<option value="BMW">BMW</option>
+						<option value="フォルクスワーゲン">フォルクスワーゲン</option>
+						<option value="アウディ">アウディ</option>
+						<option value="MINI">MINI</option>
+						<option value="ボルボ">ボルボ</option>
+						<option value="プジョー">プジョー</option>
+						<option value="ポルシェ">ポルシェ</option>
+						<option value="チェロキー">チェロキー</option>
+						<option value="レイジーローバー">レイジーローバー</option>
+					</select>
+				</label>
+				<div class="pc_only" style="text-align:right;"><a for="all" id="all"> 条件をリセット</a></div>
+				<div class="sp_only" style="text-align:right;"><a for="all" id="all_sp"> 条件をリセット</a></div>
 			</div>
     </div><!-- /.content -->
 	</div><!-- /#section4 -->

@@ -269,11 +269,107 @@
 	position: relative;
 	padding: 0 0 60px;
 }
+#car #main #section2 .content .goonet {
+  text-align: right;
+}
+#car #main #section2 .content .goonet a {
+	background-color: #e50012;
+	border-radius: 4px;
+	display: block;
+  width: 200px;
+  margin: 10px 0 0 auto;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+}
+#car #main #section2 .content .goonet a:hover {
+  opacity: 0.7;
+}
 #car #main #section2 p {
 	font-size: 14px;
 }
 #car #main #section2 img.partation {
 	margin: 30px 0;
+}
+#car #main #section2 .upper_item .slick-slide img {
+	width: 90%;
+  margin: auto;
+}
+#car #main #section2 .upper_item .slick-prev, #car #main #section2 .upper_item .slick-next {
+	top: 50%;
+}
+#car #main #section2 .upper_item .slick-prev {
+	left: 0;
+}
+#car #main #section2 .upper_item .slick-next {
+	right: 0;
+}
+#car #main #section2 .upper_item div.sub_ttl {
+	margin-top: 20px;
+	font-weight: bold;
+}
+#car #main #section2 .upper_item div.first_row {
+	position: relative;
+	border-bottom: solid 1px #bbb;
+  padding-bottom: 10px;
+}
+#car #main #section2 .upper_item div.first_row ul {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+#car #main #section2 .upper_item div.first_row ul li {
+	display: inline-block;
+	background-color: #717071;
+	color: #fff;
+	padding: 6px;
+	font-size: 12px;
+	margin-right: 3px;
+}
+#car #main #section2 .upper_item div.second_row {
+	position: relative;
+}
+#car #main #section2 .upper_item div.second_row span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border: solid 1px;
+  border-radius: 5px;
+  padding: 0 8px;
+}
+#car #main #section2 .upper_item div.second_row div {
+	font-size: 12px;
+	padding-right: 45px;
+}
+#car #main #section2 .upper_item div.third_row {
+	margin-top: 15px;
+  border: solid 1px #bbb;
+  background-color: #F9F9F9;
+  padding: 5px 10px;
+}
+#car #main #section2 .upper_item div.third_row > div {
+	text-align: center;
+  color: #e50012;
+  font-weight: bold;
+}
+#car #main #section2 .upper_item div.third_row > p {
+	font-size: 12px;
+	margin: 7px 0;
+}
+#car #main #section2 .upper_item div.price {
+	font-size: 12px;
+}
+#car #main #section2 .upper_item span {
+  margin-right: 5px;
+}
+#car #main #section2 .upper_item span.large {
+	font-size: 46px;
+	line-height: 46px;
+	font-weight: bold;
+}
+#car #main #section2 .upper_item span.normal {
+	font-size: 18px;
+	font-weight: bold;
 }
 #car #main #section2 .lower_item {
 	width: 70%;
@@ -422,6 +518,9 @@
 }
 #car #main #section4 .row {
   margin: 20px 0;
+}
+#car #main #section4 .icon_ttl {
+    margin-top: 10px;
 }
 #car #main #section4 #all {
 	margin-right: 20px;

@@ -68,6 +68,17 @@ function allRemove(value) {
 	$(value).prop('checked', false);
 }
 });
+$(function() {
+$('#all_sp').on('click', function() {
+	clearSelectBox();
+});
+function clearSelectBox(){
+    $('.sp_only select').each(function() {
+        $(this).children('option').removeAttr('selected'); //optionのselected要素の削除
+        this.selectedIndex= 0; //selectIndexを0に設定。
+    });
+}
+});
 </script>
 </head>
 
@@ -99,18 +110,17 @@ function allRemove(value) {
 <div id="main">
 
   <div id="section1">
-  	<img src="img/slide1.png" class="pc_only" alt="About Us MEOTORABAとは">
-    <img src="img/carlist/slide1.png" class="sp_only" alt="走る喜び　魅せる喜び　人生の喜び">
+  	<img src="img/slide1.png" class="pc_only" alt="在庫車一覧">
+    <img src="img/slide1_sp.png" class="sp_only" alt="在庫車一覧">
   </div><!-- /#section1 -->
 
   <div id="section2">
   	<div class="content">
 			<h2 class="ttl"><img src="img/ttl_stock.png" alt="Stock List"></h2>
 			<p class="sub st"><strong>お探しのクルマを見つける</strong></p>
-			<a class="red_btn" href="#" target="_blank">Goonetで見る</a>
 			<div class="search">
 				<div>メーカー・ブランド<span>※複数選択可</span></div>
-				<div class="row">
+				<div class="row pc_only">
 					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> メルセデス・ベンツ</label>
 					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> BMW</label>
 					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> フォルクスワーゲン</label>
@@ -122,8 +132,25 @@ function allRemove(value) {
 					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> チェロキー</label>
 					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> レイジーローバー</label>
 				</div>
-				<div style="text-align:right;"><a for="all" id="all"> 条件をリセット</a></div>
+				<label class="sp_only">
+					<select name="maker" size="1" multiple>
+						<option value="---">指定なし</option>
+						<option value="メルセデス・ベンツ">メルセデス・ベンツ</option>
+						<option value="BMW">BMW</option>
+						<option value="フォルクスワーゲン">フォルクスワーゲン</option>
+						<option value="アウディ">アウディ</option>
+						<option value="MINI">MINI</option>
+						<option value="ボルボ">ボルボ</option>
+						<option value="プジョー">プジョー</option>
+						<option value="ポルシェ">ポルシェ</option>
+						<option value="チェロキー">チェロキー</option>
+						<option value="レイジーローバー">レイジーローバー</option>
+					</select>
+				</label>
+				<div class="pc_only" style="text-align:right;"><a for="all" id="all"> 条件をリセット</a></div>
+				<div class="sp_only" style="text-align:right;"><a for="all" id="all_sp"> 条件をリセット</a></div>
 			</div>
+			<a class="red_btn" href="#" target="_blank">Goonetで見る</a>
     </div><!-- /.content -->
 	</div><!-- /#section2 -->
 
@@ -132,22 +159,286 @@ function allRemove(value) {
 
 			<div class="product pc_only">
 				<ul class="clearfix">
-					<li><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="../img/car1.png" alt=""></a></li>
-					<li><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="../img/car2.png" alt=""></a></li>
-					<li class="right"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="../img/car3.png" alt=""></a></li>
-					<li><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="../img/car4.png" alt=""></a></li>
-					<li><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="../img/car5.png" alt="../"></a></li>
-					<li class="right"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="../img/car6.png" alt=""></a></li>
+					<li class="col-sm-4"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="../img/top/car1.png" alt=""></a>
+						<div class="row">
+							<div class="col-sm-7 col-xs-7">
+								<div>車両本体価格</div>
+								<div class="price"><span class="large">214</span><span class="normal">万円</span>(消費税込)</div>
+							</div>
+							<div class="col-sm-5 col-xs-5 right-item">
+								<div>車両本体情報</div>
+								<table>
+									<tbody>
+										<tr>
+											<th>年式</th>
+											<td>：H23</td>
+										</tr>
+										<tr>
+											<th>走行距離</th>
+											<td>：48,000km</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					  </div>
+				  </li>
+					<li class="col-sm-4"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="../img/top/car2.png" alt=""></a>
+						<div class="row">
+							<div class="col-sm-7 col-xs-7">
+								<div>車両本体価格</div>
+								<div class="price"><span class="large">214</span><span class="normal">万円</span>(消費税込)</div>
+							</div>
+							<div class="col-sm-5 col-xs-5 right-item">
+								<div>車両本体情報</div>
+								<table>
+									<tbody>
+										<tr>
+											<th>年式</th>
+											<td>：H23</td>
+										</tr>
+										<tr>
+											<th>走行距離</th>
+											<td>：48,000km</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					  </div>
+				  </li>
+					<li class="col-sm-4"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="../img/top/car3.png" alt=""></a>
+						<div class="row">
+							<div class="col-sm-7 col-xs-7">
+								<div>車両本体価格</div>
+								<div class="price"><span class="large">214</span><span class="normal">万円</span>(消費税込)</div>
+							</div>
+							<div class="col-sm-5 col-xs-5 right-item">
+								<div>車両本体情報</div>
+								<table>
+									<tbody>
+										<tr>
+											<th>年式</th>
+											<td>：H23</td>
+										</tr>
+										<tr>
+											<th>走行距離</th>
+											<td>：48,000km</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					  </div>
+				  </li>
+					<li class="col-sm-4"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="../img/top/car4.png" alt=""></a>
+						<div class="row">
+							<div class="col-sm-7 col-xs-7">
+								<div>車両本体価格</div>
+								<div class="price"><span class="large">214</span><span class="normal">万円</span>(消費税込)</div>
+							</div>
+							<div class="col-sm-5 col-xs-5 right-item">
+								<div>車両本体情報</div>
+								<table>
+									<tbody>
+										<tr>
+											<th>年式</th>
+											<td>：H23</td>
+										</tr>
+										<tr>
+											<th>走行距離</th>
+											<td>：48,000km</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					  </div>
+				  </li>
+					<li class="col-sm-4"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="../img/top/car5.png" alt=""></a>
+						<div class="row">
+							<div class="col-sm-7 col-xs-7">
+								<div>車両本体価格</div>
+								<div class="price"><span class="large">214</span><span class="normal">万円</span>(消費税込)</div>
+							</div>
+							<div class="col-sm-5 col-xs-5 right-item">
+								<div>車両本体情報</div>
+								<table>
+									<tbody>
+										<tr>
+											<th>年式</th>
+											<td>：H23</td>
+										</tr>
+										<tr>
+											<th>走行距離</th>
+											<td>：48,000km</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					  </div>
+				  </li>
+					<li class="col-sm-4"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="../img/top/car6.png" alt=""></a>
+						<div class="row">
+							<div class="col-sm-7 col-xs-7">
+								<div>車両本体価格</div>
+								<div class="price"><span class="large">214</span><span class="normal">万円</span>(消費税込)</div>
+							</div>
+							<div class="col-sm-5 col-xs-5 right-item">
+								<div>車両本体情報</div>
+								<table>
+									<tbody>
+										<tr>
+											<th>年式</th>
+											<td>：H23</td>
+										</tr>
+										<tr>
+											<th>走行距離</th>
+											<td>：48,000km</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					  </div>
+				  </li>
 				</ul>
 			</div>
 
       <div class="slider2 sp_only">
-        <div class="slick-slide"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="img/car1.png" alt=""></a></div>
-        <div class="slick-slide"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="img/car2.png" alt=""></a></div>
-        <div class="slick-slide"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="img/car3.png" alt=""></a></div>
-        <div class="slick-slide"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="img/car4.png" alt=""></a></div>
-        <div class="slick-slide"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="img/car5.png" alt=""></a></div>
-        <div class="slick-slide"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="img/car6.png" alt=""></a></div>
+        <div class="slick-slide"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="../img/top/car1.png" alt=""></a>
+					<div class="row">
+						<div class="col-sm-7 col-xs-7">
+							<div>車両本体価格</div>
+							<div class="price"><span class="large">214</span><span class="normal">万円</span>(消費税込)</div>
+						</div>
+						<div class="col-sm-5 col-xs-5 right-item">
+							<div>車両本体情報</div>
+							<table>
+								<tbody>
+									<tr>
+										<th>年式</th>
+										<td>：H23</td>
+									</tr>
+									<tr>
+										<th>走行距離</th>
+										<td>：48,000km</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+        <div class="slick-slide"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="../img/top/car2.png" alt=""></a>
+					<div class="row">
+						<div class="col-sm-7 col-xs-7">
+							<div>車両本体価格</div>
+							<div class="price"><span class="large">214</span><span class="normal">万円</span>(消費税込)</div>
+						</div>
+						<div class="col-sm-5 col-xs-5 right-item">
+							<div>車両本体情報</div>
+							<table>
+								<tbody>
+									<tr>
+										<th>年式</th>
+										<td>：H23</td>
+									</tr>
+									<tr>
+										<th>走行距離</th>
+										<td>：48,000km</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+        <div class="slick-slide"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="../img/top/car3.png" alt=""></a>
+					<div class="row">
+						<div class="col-sm-7 col-xs-7">
+							<div>車両本体価格</div>
+							<div class="price"><span class="large">214</span><span class="normal">万円</span>(消費税込)</div>
+						</div>
+						<div class="col-sm-5 col-xs-5 right-item">
+							<div>車両本体情報</div>
+							<table>
+								<tbody>
+									<tr>
+										<th>年式</th>
+										<td>：H23</td>
+									</tr>
+									<tr>
+										<th>走行距離</th>
+										<td>：48,000km</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+        <div class="slick-slide"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="../img/top/car4.png" alt=""></a>
+					<div class="row">
+						<div class="col-sm-7 col-xs-7">
+							<div>車両本体価格</div>
+							<div class="price"><span class="large">214</span><span class="normal">万円</span>(消費税込)</div>
+						</div>
+						<div class="col-sm-5 col-xs-5 right-item">
+							<div>車両本体情報</div>
+							<table>
+								<tbody>
+									<tr>
+										<th>年式</th>
+										<td>：H23</td>
+									</tr>
+									<tr>
+										<th>走行距離</th>
+										<td>：48,000km</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+        <div class="slick-slide"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="../img/top/car5.png" alt=""></a>
+					<div class="row">
+						<div class="col-sm-7 col-xs-7">
+							<div>車両本体価格</div>
+							<div class="price"><span class="large">214</span><span class="normal">万円</span>(消費税込)</div>
+						</div>
+						<div class="col-sm-5 col-xs-5 right-item">
+							<div>車両本体情報</div>
+							<table>
+								<tbody>
+									<tr>
+										<th>年式</th>
+										<td>：H23</td>
+									</tr>
+									<tr>
+										<th>走行距離</th>
+										<td>：48,000km</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+        <div class="slick-slide"><a href="pdf/meotoraba_1112.pdf" target="_blank"><img src="../img/top/car6.png" alt=""></a>
+					<div class="row">
+						<div class="col-sm-7 col-xs-7">
+							<div>車両本体価格</div>
+							<div class="price"><span class="large">214</span><span class="normal">万円</span>(消費税込)</div>
+						</div>
+						<div class="col-sm-5 col-xs-5 right-item">
+							<div>車両本体情報</div>
+							<table>
+								<tbody>
+									<tr>
+										<th>年式</th>
+										<td>：H23</td>
+									</tr>
+									<tr>
+										<th>走行距離</th>
+										<td>：48,000km</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
       </div>
 
     </div>
@@ -155,13 +446,20 @@ function allRemove(value) {
 
 	<div id="section4">
   	<div class="content">
-			<h2 class="ttl"><img src="img/ttl_stock.png" alt="Stock List"></h2>
-			<p class="sub st"><strong>お探しのクルマを見つける</strong></p>
+			<ul class="paging">
+				<li class="disabled">←</li>
+				<li class="checked">1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>→</li>
+			</ul>
 			<a class="red_btn" href="#" target="_blank">Goonetで見る</a>
 			<div class="search">
-				<div class="upper-item"><img src="img/caricon.png" alt="caricon" /></div>
+				<div class="upper-item"><img src="img/icon_car.png" alt="caricon" /><div style="margin-top:7px;">条件を変えて絞り込む</div></div>
 				<div>メーカー・ブランド<span>※複数選択可</span></div>
-				<div class="row">
+				<div class="row pc_only">
 					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> メルセデス・ベンツ</label>
 					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> BMW</label>
 					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> フォルクスワーゲン</label>
@@ -173,7 +471,23 @@ function allRemove(value) {
 					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> チェロキー</label>
 					<label class="col-md-15 col-sm-3"><input type="checkbox" class="check"> レイジーローバー</label>
 				</div>
-				<div style="text-align:right;"><a for="all" id="all"> 条件をリセット</a></div>
+				<label class="sp_only">
+					<select name="maker" size="1" multiple>
+						<option value="---">指定なし</option>
+						<option value="メルセデス・ベンツ">メルセデス・ベンツ</option>
+						<option value="BMW">BMW</option>
+						<option value="フォルクスワーゲン">フォルクスワーゲン</option>
+						<option value="アウディ">アウディ</option>
+						<option value="MINI">MINI</option>
+						<option value="ボルボ">ボルボ</option>
+						<option value="プジョー">プジョー</option>
+						<option value="ポルシェ">ポルシェ</option>
+						<option value="チェロキー">チェロキー</option>
+						<option value="レイジーローバー">レイジーローバー</option>
+					</select>
+				</label>
+				<div class="pc_only" style="text-align:right;"><a for="all" id="all"> 条件をリセット</a></div>
+				<div class="sp_only" style="text-align:right;"><a for="all" id="all_sp"> 条件をリセット</a></div>
 			</div>
     </div><!-- /.content -->
 	</div><!-- /#section4 -->

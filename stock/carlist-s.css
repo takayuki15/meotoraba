@@ -9,11 +9,8 @@
 	width: 100%;
 	margin: 0;
 }
-#carlist #main #section1 .slider1 img.pc_only {
-	display: none;
-}
-#carlist #main #section1 .slider1 img.sp_only {
-	display: block;
+#carlist #main #section1 {
+	padding-top: 20px;
 }
 #carlist #main #section1 #news_sec {
 	width: 100%;
@@ -84,11 +81,46 @@
 	padding: 0 10px 0 6px;
 }
 #carlist #main #section2 {
-	padding: 40px 0 0;
+	padding: 40px 0 20px;
 }
 #carlist #main #section2 .content {
 	width: 100%;
-	padding: 0 14%;
+}
+#carlist #main div.search {
+	padding: 30px 10px 20px;
+	margin: 0 20px;
+}
+#carlist #main div.search span {
+    font-size: 11px !important;
+    font-weight: normal !important;
+}
+#carlist #main .search select {
+	position: relative;
+	width: 100%;
+  margin-top: 5px;
+  border: solid 1px #bbb;
+	color: #aaa;
+	padding:0 8px;
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+#carlist #main .search label {
+	position: relative;
+  width: 100%;
+	font-weight: normal;
+}
+#carlist #main .search label::after {
+	display: block;
+  content: " ";
+  position: absolute;
+  top: 12px;
+  right: 8px;
+  width: 15px;
+  height: 15px;
+  background: url(img/arrow_down.png) 0 0 no-repeat;
+  background-size: 15px;
+  pointer-events: none;
 }
 #carlist #main #section2 h2 {
 	width: 100%;
@@ -100,10 +132,11 @@
 }
 #carlist #main #section2 img {
 	position: static;
+	width: 30%;
 }
-#carlist #main #section2 p.pdf a {
-	width: 130px;
-	padding: 10px 0;
+#carlist #main #section2 a.red_btn {
+	position: initial;
+	margin: 20px 20px auto auto;
 }
 #carlist #main #section2 p {
 	font-size: 10px;
@@ -142,6 +175,37 @@
 }
 #carlist #main #section3 .slider2 .slick-slide img {
 	width: auto;
+}
+#carlist #main #section3 .slider2 .slick-slide div.row {
+	margin-top: 5px;
+	width: 100%;
+}
+#carlist #main #section3 .slider2 .slick-slide .right-item {
+	position: relative;
+	height: 74px;
+	border-left: solid 2px #333;
+}
+#carlist #main #section3 .slider2 .slick-slide table {
+	position: absolute;
+	bottom: 0;
+}
+#carlist #main #section3 .slider2 .slick-slide tr {
+	font-size: 11.5px;
+	line-height: 22px;
+}
+#carlist #main #section3 .slider2 .slick-slide th {
+	font-weight: normal;
+}
+#carlist #main #section3 .slider2 .slick-slide div.price {
+	font-size: 10.5px;
+}
+#carlist #main #section3 .slider2 .slick-slide span.large {
+	font-size: 38px;
+	font-weight: bold;
+}
+#carlist #main #section3 .slider2 .slick-slide span.normal {
+	font-size: 16px;
+	font-weight: bold;
 }
 #carlist #main #section4 {
 	width: 100%;
@@ -200,56 +264,8 @@
 	font-size: 12px;
 	margin-bottom: 10px;
 }
-#carlist #main #section4 p.pdf a {
-	font-size: 11px;
-	text-align: center;
-	display: block;
-	width: 90%;
-	margin: 10px auto 0;
-	color: #FFF;
-	background-color: #e50012;
-	padding: 14px 0;
-	border-radius: 4px;
-}
-#carlist #main #section5 h2 {
-	width: 100%;
-}
-#carlist #main #section5 h2 img {
-	width: 78px;
-}
-#carlist #main #section5 p.sub {
-	font-size: 11px;
-	margin-bottom: 32px;
-}
-#carlist #main #section5 table  {
-	width: 92%;
-	display: block;
-	margin: 0 auto;
-}
-#carlist #main #section5 table tbody {
-	display: block;
-	width: 100%;
-}
-#carlist #main #section5 table tr {
-	display: block;
-	width: 100%;
-	border-bottom: 1px solid #e2e2e2;
-	padding: 14px 0;
-}
-#carlist #main #section5 table tr:first-child {
-	border-top: 1px solid #e2e2e2;
-}
-#carlist #main #section5 table th {
-	display: block;
-	width: 100%;
-	font-size: 12px;
-	text-align: center;
-	padding: 0;
-}
-#carlist #main #section5 table td {
-	display: block;
-	width: 100%;
-	text-align: center;
-	font-size: 12px;
-	padding: 0;
+#carlist #main #section4 a.red_btn {
+	right: 20px;
+	bottom: 0;
+	top: initial;
 }

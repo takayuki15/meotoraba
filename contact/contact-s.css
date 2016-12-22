@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+#contact #main {
+	width: 100%;
+	margin: 0;
+	padding:0;
+}
+#contact #main .content {
+	width: 100%;
+	margin: 0;
+}
+#contact #main #section1 {
+	padding-top: 20px;
+}
+#contact #main #section2 {
+	padding: 40px 0 20px;
+}
+#contact #main #section2 .content {
+	width: 100%;
+}
+#contact #main #section2 form.contact_form {
+    padding: 30px 10px 20px;
+    margin: auto;
+    width: 90%;
+}
+#contact #main #section2 form.contact_form div.upper-item .textarea {
+    width: 90%;
+    border: solid 1px #bbb;
+}
+#contact #main #section2 form.contact_form div.upper-item .note {
+    width: 90%;
+    padding: 15px 10px;
+    font-size: 10.5px;
+    text-align: left;
+}
+#contact #main #section2 form.contact_form div.upper-item img {
+	  width: 65px;
+}
+#contact #main #section2 form.contact_form div.middle_item img {
+    width: 45px;
+}
+#contact #main #section2 .middle_item {
+    width: 100%;
+}
+#contact #main #section2 .middle_item .row input {
+    border: solid 1px #bbb;
+}
+#contact #main #section2 .lower_item {
+    width: 100%;
+}
+#contact #main #section2 .contact_btn {
+    float: none;
+}
+#contact #main #section2 .contact_btn a {
+	padding: 10px 64px;
+}
+#contact #main #section2 .contact_btn a.tell {
+	padding-left: 80px;
+}
+#contact #main #section2 h2 {
+	width: 100%;
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 6px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+#contact #main #section2 img {
+	position: static;
+	width: 30%;
+}
+#contact #main #section2 a.red_btn {
+	position: initial;
+	margin: 20px 20px auto auto;
+}
+#contact #main #section2 p {
+	font-size: 12px;
+}

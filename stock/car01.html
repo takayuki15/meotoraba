@@ -40,6 +40,8 @@
 <script type="text/javascript" src="../common/js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="../common/js/jquery.mousewheel.js"></script>
 <script type="text/javascript" src="../common/js/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="sliderengine/amazingslider.js"></script>
+<script type="text/javascript" src="sliderengine/initslider-1.js"></script>
 <script type="text/javascript">
 	jQuery.event.add(window,"load",function(){
 			$('.scroll-pane').jScrollPane();
@@ -119,11 +121,34 @@ function clearSelectBox(){
 			<div class="row upper_item">
 
 				<img class="sp_only" src="img/car_name01.png" />
-				<div class="slider2 col-sm-7">
+				<!-- <div class="slider2 col-sm-7">
 					<div class="slick-slide"><img src="img/car01.jpg" alt=""></div>
 					<div class="slick-slide"><img src="img/car02.jpg" alt=""></div>
 					<div class="slick-slide"><img src="img/car03.jpg" alt=""></div>
+				</div> -->
+				<!-- Insert to your webpage where you want to display the slider -->
+				<div id="amazingslider-wrapper-1" class="col-sm-7" style="display:block;position:relative;margin:0px auto 0;">
+						<div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+								<ul class="amazingslider-slides" style="display:none;">
+										<li><img src="images/car1.png" alt="car1"  title="car1" />
+										</li>
+										<li><img src="images/car01.jpg" alt="car01"  title="car01" />
+										</li>
+										<li><img src="images/car02.jpg" alt="car02"  title="car02" />
+										</li>
+										<li><img src="images/car03.jpg" alt="car03"  title="car03" />
+										</li>
+								</ul>
+								<ul class="amazingslider-thumbnails" style="display:none;">
+										<li><img src="images/car1-tn.png" alt="car1" title="car1" /></li>
+										<li><img src="images/car01-tn.jpg" alt="car01" title="car01" /></li>
+										<li><img src="images/car02-tn.jpg" alt="car02" title="car02" /></li>
+										<li><img src="images/car03-tn.jpg" alt="car03" title="car03" /></li>
+								</ul>
+						<div class="amazingslider-engine"><a href="http://amazingslider.com" title="Responsive jQuery Image Slideshow">Responsive jQuery Image Slideshow</a></div>
+						</div>
 				</div>
+				<!-- End of body section HTML codes -->
 
 				<div class="col-sm-5">
 					<div class="first_row">

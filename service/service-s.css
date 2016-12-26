@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+#top #main {
+	width: 100%;
+	margin: 0;
+	padding:0;
+}
+#top #main .content {
+	width: 100%;
+	margin: 0;
+}
+#top #main #section1 {
+	padding: 20px 0 0;
+}
+#top #main #section2 {
+	padding: 40px 0 0;
+}
+#top #main #section2 .content {
+	width: 100%;
+	padding: 0 3%;
+}
+#top #main #section2 h2 {
+	width: 100%;
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 6px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+#top #main #section2 img {
+	position: static;
+}
+#top #main #section2 p.pdf a {
+	width: 130px;
+	padding: 10px 0;
+}
+#top #main #section2 p {
+	font-size: 10px;
+}
+#top #main #section2 h2 img {
+	width: 55px;
+}
+#top #main #section2 p.sub {
+	font-size: 11px;
+	margin-bottom: 32px;
+}
+#top #main #section2 dl {
+	box-sizing: border-box;
+	width: 92%;
+	margin: 0 auto 30px;
+	padding: 18px 10px 30px;
+}
+#top #main #section2 dl dt {
+	font-size: 14px;
+	margin-bottom: 16px;
+}
+#top #main #section2 dl dd {
+	padding: 0 18px;
+}
+#top #main #section2 dl dd .right {
+	float: none;
+	width: 100%;
+}
+#top #main #section2 dl dd .left {
+    padding: 40px 5px 0;
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+#top #main #section2 dl dd img {
+	float: none;
+	width: auto;
+}
+#top #main #section2 dl dd p {
+	float: none;
+	width: 380px;
+}
+#top #main #section2 dl dd p.text1 {
+	width: 100%;
+	font-size: 16px;
+	padding-bottom: 8px;
+	margin-bottom: 12px;
+	text-align: center;
+}
+#top #main #section2 dl dd p.text2 {
+	width: 100%;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+#top #main #section2 p.pdf a {
+	font-size: 11px;
+	text-align: center;
+	display: block;
+	width: 90%;
+	margin: 10px auto 0;
+	color: #FFF;
+	background-color: #e50012;
+	padding: 14px 0;
+	border-radius: 4px;
+}
+#top #main #section2 dl.security div.security-ttl {
+	font-size: 12px;
+}
+#top #main #section2 dl.security div.security-ttl span {
+	padding: 1px 5px;
+	margin-right: 2px;
+}
+#top #main #section2 dl.security ul li {
+    font-size: 7.7px;
+		margin-bottom: 4px;
+}
+#top #main #section2 dl.security .first-row-sp {
+  height: 220px;
+}
+#top #main #section2 dl.security .second-row-sp {
+  height: 120px;
+}
+#top #main #section2 dl.security .third-row-sp {
+  height: 105px;
+}
+.col-xs-6 {
+	padding-right: 5px !important;
+	padding-left: 5px !important;
+}

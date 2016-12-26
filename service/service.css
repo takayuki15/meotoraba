@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+/*============================
+#
+============================*/
+#top #main{
+	width:100%;
+	margin:0;
+}
+#top #main .content {
+	width: 1000px;
+	margin: 0 auto;
+}
+#top #main #section1 {
+	width: 100%;
+	position: relative;
+}
+
+#top #main #section2 {
+	width: 100%;
+	padding: 40px 0 50px;
+	border-bottom: 1px solid #d5d5d5;
+	-moz-box-shadow: 0px 0px 10px #d5d5d5;
+	-webkit-box-shadow: 0px 0px 10px #d5d5d5;
+	box-shadow: 0px 0px 10px #d5d5d5;
+}
+#top #main #section2 h2 {
+	text-align: center;
+	margin: 0 0 14px;
+}
+#top #main #section2 p.sub {
+	color: #000;
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 48px;
+}
+#top #main #section2 dl {
+	box-sizing: border-box;
+	width: 800px;
+	margin: 0 auto 50px;
+	border: 1px solid #c8c8c8;
+	padding: 26px 62px 42px;
+}
+#top #main #section2 dl.security .first-row-pc {
+  height: 280px;
+}
+#top #main #section2 dl.security .second-row-pc {
+  height: 160px;
+}
+#top #main #section2 dl.security ul li {
+  color: #808080;
+	font-size: 12px;
+}
+#top #main #section2 dl.security div.security-ttl {
+  font-size: 20px;
+	margin-bottom: 5px;
+}
+#top #main #section2 dl.security div.security-ttl span {
+  color: #fff;
+	-webkit-border-radius: 50%;/* width,heightの半分 */
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+	padding: 2px 8px;
+  margin-right: 6px;
+}
+#top #main #section2 dl.security dd p {
+  width: 90%;
+}
+#top #main #section2 dl.security dd img {
+  width: 100%;
+}
+#top #main #section2 dl dt {
+	padding: 40px 0 35px;
+	background-image: url(img/icon1.png), url(img/stroke.png);
+	background-position: center top, center bottom;
+	background-repeat: no-repeat, no-repeat;
+	text-align: center;
+	color: #E50012;
+	font-size: 22px;
+	margin-bottom: 36px;
+}
+#top #main #section2 dl dt#security {
+	background-image: url(img/icon2.png), url(img/stroke.png);
+}
+#top #main #section2 dl dt#exam {
+	background-image: url(img/icon3.png), url(img/stroke.png);
+}
+#top #main #section2 dl dt#repair {
+	background-image: url(img/icon4.png), url(img/stroke.png);
+}
+#top #main #section2 dl dt#coating {
+	padding: 40px 0 35px;
+	background-image: url(img/icon5.png), url(img/stroke.png);
+}
+#top #main #section2 dl dt#insurance {
+	padding: 50px 0 35px;
+	background-image: url(img/icon6.png), url(img/stroke.png);
+}
+#top #main #section2 dl dd img {
+	float: left;
+	width: 274px;
+	height: auto;
+}
+#top #main #section2 dl dd .right {
+	float: right;
+	width: 380px;
+}
+#top #main #section2 dl dd .left {
+	float: left;
+	padding: 90px 5px 0;
+}
+#top #main #section2 dl dd p {
+	width: 380px;
+}
+#top #main #section2 dl dd p.text1 {
+	color: #808080;
+	font-size: 20px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #808080;
+	margin-bottom: 24px;
+}
+#top #main #section2 dl dd p.text2 {
+	color: #808080;
+	font-size: 14px;
+}
+#top #main #section2 a.btn {
+	display: block;
+	width: 246px;
+	color: #FFF;
+	font-size: 14px;
+	padding: 6px 0;
+	text-align: center;
+	margin: 0 auto;
+	background-color: #e50012;
+	border-radius: 4px;
+}
+#top #main #section2 a.btn:hover {
+	opacity: 0.7;
+}
+#top #main #section2 p.pdf a {
+	font-size: 14px;
+	text-align: center;
+	display: block;
+	width: 422px;
+	margin: 10px auto 0;
+	color: #FFF;
+	background-color: #e50012;
+	padding: 18px 0;
+	border-radius: 4px;
+}

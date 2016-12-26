@@ -9,89 +9,18 @@
 	width: 100%;
 	margin: 0;
 }
-#about #main #section1 .slider1 img.pc_only {
-	display: none;
-}
-#about #main #section1 .slider1 img.sp_only {
-	display: block;
-}
-#about #main #section1 #news_sec {
-	width: 100%;
-	height: 86px;
-	background-color: rgba(255,255,255,0.8);
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	z-index: 500;
-}
-#about #main #section1 #news_sec_inner {
-	width: 100%;
-	margin: 0;
-}
-#about #main #section1 #news_sec_inner h2 {
-	float: none;
-	width: 100%;
-	text-align: center;
-	border-right: none;
-	margin: 8px 0 8px;
-	padding-bottom: 8px;
-	background: url(../../img/top/underline.png) center bottom no-repeat;
-}
-#about #main #section1 #news_sec_inner h2 img {
-	width: 42px;
-	height: auto;
-}
-#about #main #section1 #news_sec_inner .news_box {
-	float: none;
-	width: 100% !important;
-	height: 46px !important;
-	margin: 0;
-	padding: 0 0 0 4% !important;
-}
-#about #main #section1 #news_sec_inner .news_box .jspContainer {
-	width: 100% !important;
-	height: 46px !important;
-}
-#about #main #section1 #news_sec_inner .news_box .jspPane {
-	width: 100% !important;
-}
-#about #main #section1 #news_sec_inner .news_box ul li {
-	display: table;
-	font-size: 10px;
-	padding: 10px 0;
-	border-bottom: 1px dashed #666;
-}
-#about #main #section1 #news_sec_inner .news_box ul li span.day {
-	display: table-cell;
-	width: 78px;
-	padding-right: 6px;
-	margin-right: 0;
-	border-right: none;
-	font-size: 10px;
-	position: relative;
-}
-#about #main #section1 #news_sec_inner .news_box ul li span.day:after {
-	content: " ";
-	position: absolute;
-	right: 0;
-	top: 0;
-	width: 1px;
-	height: 16px;
-	background-color: #666;
-}
-#about #main #section1 #news_sec_inner .news_box ul li span.text {
-	display: table-cell;
-	padding: 0 10px 0 6px;
+#about #main h2.ttl img {
+  height: 30px;
+	margin: auto;
 }
 #about #main #section2 {
 	padding: 40px 0 0;
 }
 #about #main #section2 .content {
 	width: 100%;
-	padding: 0 14%;
+	padding: 0 10%;
 }
 #about #main #section2 h2 {
-	width: 100%;
 	font-size: 20px;
 	text-align: center;
 	padding-bottom: 6px;
@@ -101,155 +30,60 @@
 #about #main #section2 img {
 	position: static;
 }
-#about #main #section2 p.pdf a {
-	width: 130px;
-	padding: 10px 0;
-}
 #about #main #section2 p {
-	font-size: 10px;
+	font-size: 12px;
 }
-#about #main #section3 {
-	padding: 28px 0 22px;
+#about #main #section3 .content {
+	padding: 0 10%;
 }
-#about #main #section3 h2 {
+#about #main #section3 p {
+    font-size: 12px;
+}
+#about #main #section3 h2.sub-ttl {
 	width: 100%;
+	font-size: 14px;
 }
-#about #main #section3 h2 img {
-	width: 70px;
+#about #main #section3 p.detail {
+    width: 100%;
+}
+#about #main #section3 .advantage-item {
+	margin-bottom: 0;
+	padding-bottom: 50px;
+}
+#about #main #section3 .advantage-item:last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+#about #main #section3 .advantage-item img {
+	position: static;
+	width: 100%;
 }
 #about #main #section3 p.sub {
-	font-size: 11px;
-	margin-bottom: 32px;
+    margin-bottom: 24px;
 }
-#about #main #section3 p.pdf a {
-	font-size: 11px;
-	text-align: center;
-	display: block;
-	width: 90%;
-	margin: 10px auto 0;
-	color: #FFF;
-	background-color: #e50012;
-	padding: 14px 0;
-	border-radius: 4px;
-}
-#about #main #section3 p.pdf a:hover {
-	opacity:  1;
-}
-#about #main #section3 .slider2 {
-	display: block;
-	width: 80%;
-	margin: 0 auto;
-}
-#about #main #section3 .slider2 .slick-slide img {
-	width: auto;
-}
-#about #main #section4 {
-	width: 100%;
-	padding: 40px 0;
-}
-#about #main #section4 h2 {
-	width: 100%;
-}
-#about #main #section4 h2 img {
-	width: 55px;
+#about #main #section4 .content {
+  padding: 0 10%;
 }
 #about #main #section4 p.sub {
-	font-size: 11px;
-	margin-bottom: 32px;
+	margin-bottom: 24px;
 }
-#about #main #section4 dl {
-	box-sizing: border-box;
-	width: 92%;
-	margin: 0 auto 30px;
-	padding: 18px 10px 30px;
+#about #main #section4 ul li.member {
 }
-#about #main #section4 dl dt {
-	padding: 40px 0 35px;
-	background-image: url(../../img/top/sec4_img1.png), url(../../img/top/sec4_img2.png);
-	background-position: center top, center bottom;
-	background-repeat: no-repeat, no-repeat;
-	text-align: center;
-	color: #E50012;
-	font-size: 14px;
-	margin-bottom: 16px;
-}
-#about #main #section4 dl dd {
-	padding: 0 18px;
-}
-#about #main #section4 dl dd .right {
-	float: none;
-	width: 100%;
-}
-#about #main #section4 dl dd img {
-	float: none;
-	width: auto;
-}
-#about #main #section4 dl dd p {
-	float: none;
-	width: 380px;
-}
-#about #main #section4 dl dd p.text1 {
-	width: 100%;
-	font-size: 13px;
-	padding-bottom: 8px;
-	margin-bottom: 12px;
-	text-align: center;
-}
-#about #main #section4 dl dd p.text2 {
-	width: 100%;
-	font-size: 12px;
-	margin-bottom: 10px;
-}
-#about #main #section4 p.pdf a {
-	font-size: 11px;
-	text-align: center;
-	display: block;
-	width: 90%;
-	margin: 10px auto 0;
-	color: #FFF;
-	background-color: #e50012;
-	padding: 14px 0;
-	border-radius: 4px;
-}
-#about #main #section5 h2 {
-	width: 100%;
-}
-#about #main #section5 h2 img {
-	width: 78px;
-}
-#about #main #section5 p.sub {
-	font-size: 11px;
-	margin-bottom: 32px;
-}
-#about #main #section5 table  {
-	width: 92%;
-	display: block;
-	margin: 0 auto;
-}
-#about #main #section5 table tbody {
-	display: block;
-	width: 100%;
-}
-#about #main #section5 table tr {
-	display: block;
-	width: 100%;
-	border-bottom: 1px solid #e2e2e2;
-	padding: 14px 0;
-}
-#about #main #section5 table tr:first-child {
-	border-top: 1px solid #e2e2e2;
-}
-#about #main #section5 table th {
-	display: block;
-	width: 100%;
-	font-size: 12px;
-	text-align: center;
-	padding: 0;
-}
-#about #main #section5 table td {
-	display: block;
-	width: 100%;
+#about #main #section4 ul li.member div {
 	text-align: center;
 	font-size: 12px;
-	padding: 0;
+	margin: 10px auto;
+}
+#about #main #section4 ul li.member div .name {
+	font-size: 24px;
+}
+#about #main #section4 ul li.member img {
+	width: 100%;
+}
+#about #main #section4 .slider > button {
+	display: none !important;
+}
+.slick-dots {
+    bottom: -30px !important;
+    right: 31% !important;
 }

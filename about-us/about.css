@@ -15,6 +15,10 @@
 	text-align: center;
   margin: 0 0 14px;
 }
+#about #main h2.main-ttl {
+	text-align: center;
+  margin: 0 0 24px;
+}
 #about #main h2.sub-ttl {
 	width: 440px;
 	color: #808080;
@@ -141,107 +145,16 @@
 	text-align: center;
 	margin-bottom: 48px;
 }
-#about #main #section4 dl {
-	box-sizing: border-box;
-	width: 800px;
-	margin: 0 auto 26px;
-	border: 1px solid #c8c8c8;
-	padding: 26px 62px 42px;
+#about #main #section4 ul li.member {
 }
-#about #main #section4 dl dt {
-	padding: 40px 0 35px;
-	background-image: url(../../img/top/sec4_img1.png), url(../../img/top/sec4_img2.png);
-	background-position: center top, center bottom;
-	background-repeat: no-repeat, no-repeat;
+#about #main #section4 ul li.member div {
 	text-align: center;
-	color: #E50012;
-	font-size: 22px;
-	margin-bottom: 36px;
+	font-size: 12px;
+	margin: 10px auto;
 }
-#about #main #section4 dl dd img {
-	float: left;
-	width: 274px;
-	height: auto;
+#about #main #section4 ul li.member div .name {
+	font-size: 24px;
 }
-#about #main #section4 dl dd .right {
-	float: right;
-	width: 380px;
-}
-#about #main #section4 dl dd p {
-	width: 380px;
-}
-#about #main #section4 dl dd p.text1 {
-	color: #808080;
-	font-size: 20px;
-	padding-bottom: 16px;
-	border-bottom: 1px solid #808080;
-	margin-bottom: 24px;
-}
-#about #main #section4 dl dd p.text2 {
-	color: #808080;
-	font-size: 14px;
-}
-#about #main #section4 a.btn {
-	display: block;
-	width: 246px;
-	color: #FFF;
-	font-size: 14px;
-	padding: 6px 0;
-	text-align: center;
-	margin: 0 auto;
-	background-color: #e50012;
-	border-radius: 4px;
-}
-#about #main #section4 a.btn:hover {
-	opacity: 0.7;
-}
-#about #main #section4 p.pdf a {
-	font-size: 14px;
-	text-align: center;
-	display: block;
-	width: 422px;
-	margin: 10px auto 0;
-	color: #FFF;
-	background-color: #e50012;
-	padding: 18px 0;
-	border-radius: 4px;
-}
-#about #main #section5 {
+#about #main #section4 ul li.member img {
 	width: 100%;
-	background: url(../../img/top/bg1.gif) left top repeat;
-	border-bottom: 1px solid #d5d5d5;
-	padding: 40px 0 50px;
-}
-#about #main #section5 h2 {
-	text-align: center;
-	margin: 0 0 14px;
-}
-#about #main #section5 p.sub {
-	color: #000;
-	font-size: 14px;
-	text-align: center;
-	margin-bottom: 48px;
-}
-#about #main #section5 table  {
-	table-layout: fixed;
-	width: 100%;
-}
-#about #main #section5 table tr {
-	border-bottom: 1px solid #e2e2e2;
-}
-#about #main #section5 table tr:first-child {
-	border-top: 1px solid #e2e2e2;
-}
-#about #main #section5 table th {
-	font-size: 14px;
-	padding: 20px 0;
-	width: 268px;
-}
-#about #main #section5 table td {
-	font-size: 14px;
-	padding: 20px 0;
-}
-#about #main #section6 {
-	width: 100%;
-	border-bottom: 1px solid #d5d5d5;
 }
